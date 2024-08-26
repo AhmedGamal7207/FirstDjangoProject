@@ -1,5 +1,9 @@
-# FirstDjangoProject
+# Table of Contents
 
+```toc
+```
+
+---
 # Creating Virtual Environment
 
 Go to the folder you want to create the project in then run this in CMD
@@ -259,6 +263,7 @@ Then modify the home and about pages to put all body code inside the block conte
 </html>
 ```
 
+---
 # Pass data from model through view to template
 
 If you are using a Class as view, you will edit your html file to this
@@ -292,6 +297,7 @@ def MyHome(request):
 ```
 along with the same html code attached above this cell
 
+---
 # Add Foreign Key
 
 Edit your model
@@ -312,9 +318,9 @@ If there is an error because of the foreign key , you can delete the sqlite3.db 
 python manage.py sqlmigrate FirstApp 0001
 ```
 
+---
 # Running my Project again
 
 - Go to the env path and run Activate
 - Then change direction to FirstProject Main Folder then runserver
-
 
