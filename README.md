@@ -1,3 +1,9 @@
+# Table of Contents
+
+```toc
+```
+
+---
 # Creating Virtual Environment
 
 Go to the folder you want to create the project in then run this in CMD
@@ -78,7 +84,7 @@ To get your Local IP Address, you can run:
 ```cmd
 ipconfig
 ```
-!['IpImage'](./Pasted image 20240826001846.png)
+![[Pasted image 20240826001846.png]]
 
 You can also migrate the sqlite3 changes by using this line:
 ```cmd
