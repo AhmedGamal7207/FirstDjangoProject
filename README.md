@@ -1,9 +1,3 @@
-# Table of Contents
-
-```toc
-```
-
----
 # Creating Virtual Environment
 
 Go to the folder you want to create the project in then run this in CMD
