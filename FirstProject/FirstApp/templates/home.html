@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
+    {% extends 'header.html' %}
+    {% load static %}
     <head>
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
         <title>Home Page</title>
     </head>
     <body>
-        {% extends 'header.html' %}
-
+        
         {% block content %}
         <h1>Home Page</h1>
         Ahmed Gamal Test
         <hr>
         {% for i in all_posts %}
         <h2>{{i.title}}</h2>
-        <h4>{{i.author}}</h4>
+        <h4>Author: {{i.author}}</h4>
         <p>{{i.text}}</p>
         <hr>
         {% endfor %}
