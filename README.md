@@ -78,7 +78,7 @@ To get your Local IP Address, you can run:
 ```cmd
 ipconfig
 ```
-![[Pasted image 20240826001846.png]]
+![Ip Image](Pasted image 20240826001846.png)
 
 You can also migrate the sqlite3 changes by using this line:
 ```cmd
