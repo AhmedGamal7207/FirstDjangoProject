@@ -1,3 +1,5 @@
+# First Django Project
+This project is my first steps in learning Django
 
 # Creating Virtual Environment
 
@@ -319,3 +321,49 @@ python manage.py sqlmigrate FirstApp 0001
 - Go to the env path and run Activate
 - Then change direction to FirstProject Main Folder then runserver
 
+---
+# Adding Static CSS and Images to settings
+
+First, create a folder named static inside FirstApp Folder, then create a folder inside that static folder named css and images. And add your css code inside a file
+```css
+body{
+    background-color: #e6e6e6;
+}
+```
+
+Go to FirstProject.settings.py and add the 2nd line after the 1st line
+```py
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'FirstApp/static')]
+```
+
+---
+# Loading files from static to templates
+
+Edit you HTML file to this:
+```html
+<html>
+    {% load static %}
+    <head>
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        <title>Home Page</title>
+    </head>
+```
+make sure you make these edits also in the header.html if you are using one
+
+---
+# Import font from google to your CSS
+
+Add this to your html's head
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+```
+
+Then, edit your CSS code
+```css
+body{
+    background-color: #363636;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+```
